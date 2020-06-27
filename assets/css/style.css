@@ -20,6 +20,7 @@ body {
 /* search history display board */
 .list-group-item {
   background-color: #efefe8ff;
+  border-style: groove;
 }
 /* make city name in bold */
 .city {
