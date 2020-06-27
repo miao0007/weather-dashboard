@@ -297,6 +297,7 @@ $("#btn-search").on("click", function (event) {
 
   // add city to search history list
   renderButtons();
+  $("#city-value").empty();
 });
 
 renderButtons();
