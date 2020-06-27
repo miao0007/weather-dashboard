@@ -114,6 +114,7 @@ function renderButtons() {
   $(".list-group").empty();
 
   // Looping through the array of cities
+  
   for (var i = 0; i < cityList.length; i++) {
     
     var li = $("<li>");
