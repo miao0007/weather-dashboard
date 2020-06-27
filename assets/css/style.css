@@ -7,6 +7,8 @@ body {
   padding: 0;
   margin-top: 0px;
 }
+
+/* text input area */
 #city-value {
   width: 230px;
   height: 40px;
@@ -15,13 +17,16 @@ body {
   border-radius: 0.25rem;
 }
 
+/* search history display board */
 .list-group-item {
   background-color: #efefe8ff;
 }
+/* make city name in bold */
 .city {
   font-size: 24px;
   font-weight: bold;
 }
+/* forecast card  */
 .card {
   background-color: rgb(35, 54, 231);
 }
@@ -29,6 +34,8 @@ body {
 .card-body {
   padding: 0.35rem;
 }
+
+/* uv index button */
 button {
   color: #ffffff;
   vertical-align: middle;
@@ -37,6 +44,8 @@ button {
   width: 3em;
   height: 2em;
 }
+
+/* uv index button color */
 .uvFavorable {
   background-color: green;
   border-radius: 5px;
@@ -56,9 +65,11 @@ button {
   background-color: purple;
   border-radius: 5px;
 }
-h4{
-  font-weight:bolder;
+/* 5-Day Forecast text */
+h4 {
+  font-weight: bolder;
 }
+/* card content style */
 .card-title {
   color: white;
 }
