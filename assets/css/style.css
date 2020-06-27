@@ -56,7 +56,9 @@ button {
   background-color: purple;
   border-radius: 5px;
 }
-
+h4{
+  font-weight:bolder;
+}
 .card-title {
   color: white;
 }
