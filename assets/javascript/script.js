@@ -19,7 +19,7 @@ $(document).ready(function () {
 function citySearch(city) {
 
   // clear out previous city data
-  
+
   $(".city").empty();
   $(".temp").empty();
   $(".humidity").empty();
@@ -124,7 +124,7 @@ function renderButtons() {
     li.attr("data-name", cityList[i]);
     // button value
     li.text(cityList[i]);
-    // Add button to the first line of the list
+    // Add button to the first row of the list
     $(".list-group").prepend(li);
   }
 
