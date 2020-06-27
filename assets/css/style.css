@@ -1,0 +1,71 @@
+body {
+  margin: 0 auto;
+  background-color: #faf4d2;
+}
+
+#city-form {
+  padding: 0;
+  margin-top: 0px;
+}
+#city-value {
+  width: 230px;
+  height: 40px;
+  margin-top: 1rem;
+  border: 1px solid rgb(199, 195, 195);
+  border-radius: 0.25rem;
+}
+
+.list-group-item {
+  background-color: #efefe8ff;
+}
+.city {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card {
+  background-color: rgb(35, 54, 231);
+}
+
+.card-body {
+  padding: 0.35rem;
+}
+button {
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 0.5em;
+  width: 3em;
+  height: 2em;
+}
+.uvFavorable {
+  background-color: green;
+  border-radius: 5px;
+}
+
+.uvModerate {
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+.uvSevere {
+  background-color: red;
+  border-radius: 5px;
+}
+
+.uvExtreme {
+  background-color: purple;
+  border-radius: 5px;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-text {
+  color: white;
+  font-size: 16px;
+}
+
+.forcast {
+  padding: 1rem;
+}

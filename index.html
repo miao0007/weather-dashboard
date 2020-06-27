@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Weather Dashboard</title>
+	</head>
+
+	<body>
+		
+	<header class="container-fluid text-center text-white bg-dark p-2">
+		<h1>Weather Dashboard</h1>
+	  </header>
+
+		<div class="container-fluid">
+			<!-- First row divides two columns -->
+			<div class="row row1">
+				<!-- First column contains search form-->
+				<div class="col-md-4 column1">
+					
+
+					<h5>Search for a City:</h5>
+					<form id="city-form" class = "form-group">
+						
+						<input type="text"  name = "city-value" id="city-value"/>
+						<button type="button" id="btn-search" class="btn btn-primary">
+							<i class="fas fa-search"></i>
+						</button>
+					
+					</form>
+
+					<!-- Places for search history -->
+					<div id="buttons-view" class="card" style="width: 18rem;">
+						<ul class="list-group history"></ul>
+					</div>
+				</div>
+
+				<!-- Row one column two -->
+				<div class="col-md-8 column2">
+					
+
+					
+					<div class="mt-3" id = "today">
+						<!-- This section displays selected city weather information which includes temperature,humidity, wind speed, and uv Index -->
+						<div class="city"></div>
+						<div class="temp" style="line-height: 2.5em;font-weight: 500;"></div>
+						<div class="humidity" style="line-height: 2.5em; font-weight: 500;"></div>
+						<div class="wind" style="line-height: 2.5em; font-weight: 500;"></div>
+						<span class="uvIndex" style="line-height: 2.5em; font-weight: 500;"></span
+						><span
+						  id="uv"
+						  style="
+							display: inline-block;
+							width: 3em;
+							height: 2em;
+							text-align: center;
+						  "
+						></span>
+						
+
+						<!-- displayed inside of a box with CSS styling -->
+					</div>
+
+					<div id="forcast" class = "mt-3">
+						<h4>5-Day Forcast:</h4>
+					</div>
+
+					<!-- COLUMN TWO ROW TWO -->
+					<div class="row r2b justify-content-between">
+						<!-- needs to be a row so that they sit side by side ! -->
+						<!-- Right side bottom:
+						Five cards with each future day's information pulling up: 
+						date/weather icon/temp/ and humidity -->
+						<div class="col-md-2">
+							<div class="card" style="width: 8rem;">
+								<div class="card-body">
+									<h5 class="card-title date-1"></h5>
+									<p class="card-text icon-1"></p>
+									<p class="card-text temp-1"></p>
+									<p class="card-text humidity-1"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="card" style="width: 8rem;">
+								<div class="card-body">
+									<h5 class="card-title date-2"></h5>
+									<p class="card-text icon-2"></p>
+									<p class="card-text temp-2"></p>
+									<p class="card-text humidity-2"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="card" style="width: 8rem;">
+								<div class="card-body">
+									<h5 class="card-title date-3"></h5>
+									<p class="card-text icon-3"></p>
+									<p class="card-text temp-3"></p>
+									<p class="card-text humidity-3"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="card" style="width: 8rem;">
+								<div class="card-body">
+									<h5 class="card-title date-4"></h5>
+									<p class="card-text icon-4"></p>
+									<p class="card-text temp-4"></p>
+									<p class="card-text humidity-4"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="card" style="width: 8rem;">
+								<div class="card-body">
+									<h5 class="card-title date-5"></h5>
+									<p class="card-text icon-5"></p>
+									<p class="card-text temp-5"></p>
+									<p class="card-text humidity-5"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- links to style sheets -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets/javascript/script.js"></script>
+	</body>
+</html>
