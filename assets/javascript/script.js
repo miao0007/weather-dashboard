@@ -17,7 +17,9 @@ $(document).ready(function () {
 // Create functions
 
 function citySearch(city) {
+
   // clear out previous city data
+  
   $(".city").empty();
   $(".temp").empty();
   $(".humidity").empty();
