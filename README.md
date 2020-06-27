@@ -11,6 +11,6 @@ The aim of this web application is to retrieve weather data for cities by using 
 
 ### Concepts Used For This App
 - Learned how to use third party API to access data and functionality by making requests with specific parameters to a URL.
-- Get information putted by user and using click events and then storing the values in localStorage.
+- Get information was put by user and using click events and then storing the values in localStorage.
 - Import Moment.js to display desired format of current data and time.
 - Learned how to use bootstrap card to display well formatted information.
